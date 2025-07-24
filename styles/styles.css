@@ -1,0 +1,150 @@
+/* Navbar Styles */
+
+.container {
+  max-width: calc(100% - 20vw);
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.nav-ul {
+  display: flex;
+  gap: 40px;
+  /* margin-right: 30px; */
+}
+
+.nav-ul li {
+  list-style: none;
+}
+.nav-ul a {
+  text-decoration: none;
+  /* margin-right: 20px; */
+}
+
+/* navbar responsive styles for mobile devices */
+
+@media screen and (max-width: 576px) {
+  .navbar .li {
+    display: none;
+  }
+  .nav-logo img {
+    width: 50%;
+    height: auto;
+  }
+  .header {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Header banner styles */
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner-left {
+  width: 50%;
+}
+
+.banner-right {
+  width: 50%;
+}
+.banner-right img {
+  width: 100%;
+  height: auto;
+  /* width: 570px;
+  height: 355px; */
+}
+
+.left-description h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-red {
+  color: #e95a08;
+}
+
+.para-body {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Banner section styles */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .container {
+    max-width: 90%; /* or any custom width you prefer */
+    padding: 0 10px;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-right {
+    width: 100%;
+  }
+  .banner-right img {
+    width: 100vw;
+    margin-left: calc((100vw - 100%) / -2);
+  }
+  .left-description h3 {
+    font-size: 1.25rem;
+  }
+  .para-body {
+    font-size: 1rem;
+  }
+}
+
+/* Our plants section */
+
+.our-plants {
+  text-align: center;
+}
+
+.plants-h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.flower-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.flower-cards .card img {
+  width: 100%;
+  height: auto;
+}
+.card p {
+  text-align: center;
+}
+.card button {
+  width: 100%;
+  background-color: #e95a08;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 19px;
+  border: none;
+}
+
+/* Responsive Our Plants sections */
+@media screen and (max-width: 576px) {
+  /* .container {
+    max-width: 90%; 
+    padding: 0 10px;
+  } */
+  .flower-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
