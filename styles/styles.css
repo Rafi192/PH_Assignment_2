@@ -120,6 +120,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-bottom: calc(18vh + 20px);
 }
 .flower-cards .card img {
   width: 100%;
@@ -134,7 +135,7 @@ nav {
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  padding: 19px;
+  padding: 15px;
   border: none;
 }
 
@@ -147,4 +148,103 @@ nav {
   .flower-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 }
+
+/* Flower Lover Section */
+
+.flower-lover {
+  display: flex;
+  /* gap: calc(5vh + 20px); */
+  gap: 60px;
+  align-items: center;
+  margin-bottom: calc(10vh + 10px);
+}
+#flower-heading {
+  font-size: 3rem;
+  margin: 0;
+}
+.person-img {
+  max-width: 50%;
+}
+
+.flower-description {
+  max-width: 50%;
+}
+.person-img img {
+  width: 100%;
+}
+
+.flower-description li {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .flower-lover {
+    flex-direction: column;
+  }
+  .person-img,
+  .flower-description {
+    max-width: 100%;
+    /* background-color: aqua; */
+  }
+}
+/* Latest deal section */
+.latest-deals {
+  text-align: center;
+  margin-bottom: calc(5% + 20px);
+}
+
+/* Deal plants section */
+
+.deal-plants {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.deal-plants h3 {
+  margin: 10px;
+}
+
+.deal-right {
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  /* background-size: 100% 100%; */
+
+  color: white;
+  flex: 1;
+  min-width: 0;
+}
+
+.left-background-1 {
+  /* width: 20vw; */
+  background-image: url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  flex: 0 0 20vw;
+
+  /* background-size: 100% 100%; */
+  /* background-size: auto; */
+  color: white;
+}
+
+.left-background-2 {
+  background-image: url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: white;
+}
+/* .deal-right img {
+  width: 100%;
+  height: auto;
+} */
