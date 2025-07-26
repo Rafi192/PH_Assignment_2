@@ -221,6 +221,10 @@ nav {
     max-width: 100%;
     /* background-color: aqua; */
   }
+  /* Responsive badge */
+  .trusted-badge {
+    display: none;
+  }
 }
 /* Latest deal section */
 .latest-deals {
