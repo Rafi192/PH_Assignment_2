@@ -386,3 +386,54 @@ a {
 /* body {
   overflow-x: hidden;
 } */
+
+/* Footer part */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 110px;
+  width: 100%;
+  /* align-items: center; */
+  margin: 50px 100px;
+}
+.footer-ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 40px;
+  column-gap: 50px;
+  align-items: center;
+}
+.footer-ul div li {
+  /* gap: 20px; */
+  padding: 20px;
+}
+
+.footer-ul li {
+  list-style: none;
+  /* color: black; */
+}
+.footer-ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Responsive footer */
+@media screen and (max-width: 576px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    /* margin: 10 0; */
+    margin: 0;
+    margin-top: 40px;
+  }
+  .footer-ul {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    row-gap: 0;
+  }
+}
