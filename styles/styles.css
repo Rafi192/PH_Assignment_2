@@ -176,16 +176,33 @@ nav {
   align-items: center;
   margin-bottom: calc(10vh + 10px);
 }
+
 #flower-heading {
   font-size: 3rem;
   margin: 0;
 }
 .person-img {
   max-width: 50%;
+  position: relative;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -4vh;
+  right: 0;
+  transform: translate(25%, -25%);
+  width: 60%;
+  height: auto;
+}
+
+.trusted-badge img {
+  width: 100%;
+  height: auto;
 }
 
 .flower-description {
   max-width: 50%;
+  margin-top: 0;
 }
 .person-img img {
   width: 100%;
