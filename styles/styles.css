@@ -4,6 +4,15 @@
   max-width: calc(100% - 20vw);
   margin: 0 auto;
 }
+.Shop {
+  color: rgba(0, 0, 0, 0.5);
+}
+#Home {
+  color: black;
+}
+a .cart {
+  color: black;
+}
 
 nav {
   display: flex;
